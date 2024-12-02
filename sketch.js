@@ -3,7 +3,7 @@ let segmentSize = 20;
 let numSegments = 10; 
 
 function setup() {
-  createCanvas(800, 800);
+  createCanvas(windowWidth, windowHeight);
 
   for (let i = 0; i < numSegments; i++) {
     segments.push({ x: width / 2, y: height / 2 }); 
