@@ -1,6 +1,6 @@
 MileStone2
 Timid Procedural Creature: Overview and Development Plan
-Planned Interactions
+
 Normal Wandering:
 Creatures will move randomly with smooth transitions. Their movement may vary based on unique characteristics like size or shape, creating subtle individuality among them.
 
