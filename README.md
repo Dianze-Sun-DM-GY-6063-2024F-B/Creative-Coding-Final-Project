@@ -27,7 +27,7 @@ Plans for Next Week:
 Next week, I plan to integrate Arduino into this project and experiment with adding a sound sensor. This will allow the creatures to respond to changes in environmental sound, such as by adjusting their movement speed, direction, or state. Additionally, I aim to design a more immersive natural environment for the creatures, inspired by settings like forests, ponds, or deep-sea ecosystems. This enhancement will make the project feel more dynamic and engaging.
 MileStone2
 Timid Procedural Creature: Overview and Development Plan
-Planned Interactions
+
 Normal Wandering:
 Creatures will move randomly with smooth transitions. Their movement may vary based on unique characteristics like size or shape, creating subtle individuality among them.
 
