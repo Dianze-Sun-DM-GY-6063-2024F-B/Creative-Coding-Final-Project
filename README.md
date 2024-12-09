@@ -1,3 +1,30 @@
+MileStone3
+Creating the Creatures:
+I initially decided to create a swarm of creatures, where each creature is made up of a series of "body segments" connected in a chain. These segments follow the movement of the creature's head. I used a Creature class to define each creature, which includes its body, movement logic, target point, and escape state.
+
+Random Movement:
+Under normal circumstances, each creature randomly selects a target point and moves toward it at a constant speed. The head moves directly toward the target, while the body segments adjust their positions incrementally using a "follow" logic. This creates a natural, swimming-like motion.
+
+Escape Mode:
+When the spacebar is pressed, all creatures switch to "escape mode," where their target instantly becomes a random position at the top of the screen. During this mode, the creatures speed up, simulating a "rapid escape" behavior.
+
+Body Movement Logic:
+The creature's head moves toward the target point, while each subsequent body segment continuously follows the segment in front of it. A minimum distance is maintained between the segments to prevent them from overlapping. To make the movement smoother, I used lerp (linear interpolation), which ensures fluid transitions between positions.
+
+Drawing the Creatures:
+Each body segment is drawn as a rectangle, with a subtle dynamic "leg movement" effect to give the creatures a sense of life. The head features two "eyes," which rotate to align with the creature's direction as it moves.
+
+Background and Visual Effects:
+The background is black, which makes the creatures' white bodies and faintly glowing legs stand out, creating the feel of nighttime movement. Each body segment also has a transparency gradient, becoming more transparent toward the tail, which mimics the gradual fading of the creature's body.
+
+Key Events:
+I implemented a key press listener. When the spacebar is pressed, all creatures enter escape mode. After a short period, they automatically return to their normal state.
+
+Responsive Design:
+I used windowWidth and windowHeight to ensure the creatures adapt to any screen size, making the program flexible and suitable for different devices.
+
+Plans for Next Week:
+Next week, I plan to integrate Arduino into this project and experiment with adding a sound sensor. This will allow the creatures to respond to changes in environmental sound, such as by adjusting their movement speed, direction, or state. Additionally, I aim to design a more immersive natural environment for the creatures, inspired by settings like forests, ponds, or deep-sea ecosystems. This enhancement will make the project feel more dynamic and engaging.
 MileStone2
 Timid Procedural Creature: Overview and Development Plan
 Planned Interactions
