@@ -1,9 +1,9 @@
 let creatures = [];
 let numCreatures = 20;
-let segmentSize = 10;
+let segmentSize = 20;
 let numSegments = 10;
 let normalSpeed = 2;
-let escapeSpeed = 8;
+let escapeSpeed = 18;
 let escapeDuration = 6000;
 let escaping = false;
 let escapeEndTime = 0;
@@ -19,6 +19,14 @@ function setup() {
 
 function draw() {
   background(0);
+  let centerX = width / 2;
+  let centerY = height / 2;
+
+  for (let r = max(width, height); r > 0; r-=20) {
+    let gradientColor = lerpColor(color(1, 102, 87), color(0, 0, 0), 2*r / max(width, height));
+    fill(gradientColor);
+    noStroke();
+    ellipse(centerX, centerY, r * 2, r * 2);}
 
   for (let i = 0; i < creatures.length; i++) {
     creatures[i].update();
